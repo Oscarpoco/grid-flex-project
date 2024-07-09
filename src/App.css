@@ -1,9 +1,8 @@
 .App
 {
   display: grid;
-  height: 170vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 1.5fr 1.5fr 0.6fr 1fr 1.3fr;
+  grid-template-rows: 0.4fr 1.5fr 1.5fr 0.6fr 1fr;
   grid-template-areas: 
   "nav nav"
   "main main"
@@ -20,15 +19,15 @@ nav
   background-color: aqua;
   grid-area: nav;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .circle-header
 {
   width: 20%;
-  height: 100%;
-  align-items: center;
+  align-items: end;
+  
 }
 .circle
 {
@@ -44,7 +43,6 @@ nav
 {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
 }
 
 .rectangle
@@ -83,12 +81,13 @@ main{
   grid-area: content1;
   border-radius: var(--main-radius);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 0.7;
   
 }
 .left
 {
-  width: 49%;
+  width: 50%;
   height: 150px;
   border: var(--main-border);
   border-radius: 5px;
@@ -97,8 +96,7 @@ main{
 }
 .right
 {
-  width: 49%;
-  height: 150px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -117,29 +115,29 @@ main{
 {
   background-color: rgb(255, 187, 0);
   grid-area: content2;
-  border-radius: var(--main-radius);
-  height: 160px;
+  border-radius: 5px;
+  
 }
 #content3
 {
   grid-area: content3;
-  height: 150px;
   display: flex;
   justify-content: space-between;
   gap: 1em;
 }
 .rectangle-1
 {
-  width: 81vh;
+  width: 30%;
   background-color: red;
+  border: var(--main-border);
   border-radius: var(--main-radius);
 }
 .circle-1
 {
-  width: 30vh;
-  height: 30vh;
   background-color: blue;
+  width: 11%;
   border-radius: 50%;
+  border: var(--main-border);
 }
 footer
 {
@@ -177,6 +175,7 @@ footer .right-1
   .App
   {
     grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1fr 1fr;
     grid-template-areas: 
     "nav"
     "main"
@@ -185,7 +184,7 @@ footer .right-1
     "content3"
     "footer"
     ;
-    height: auto;
+
   }
   nav
   {
@@ -228,15 +227,20 @@ footer .right-1
   }
   #content3
   {
-    display: flex;
     flex-direction: column;
-  }
-  .rectangle-1
-  {
-    width: ;
+    justify-content: space;
+    align-items: center;
+  
   }
   .circle-1
   {
-    width: ;
+    width: 100px;
+    height: 100px;
+  }
+  .rectangle-1
+  {
+
+    height: 100px;
+    width: 100%;
   }
 }
