@@ -25,18 +25,47 @@ function App() {
         </div>
       </div>
      </nav>
-     <main>Main</main>
+     <main></main>
      <div id='content1'>
+        <div className='left'>
 
-     </div>
+        </div>
+        <div className='right'>
+            <div className='rect'>
+
+            </div>
+            <div className='rect'>
+            
+            </div>
+            <div className='rect'>
+            
+            </div>
+            <div className='rect'>
+            
+            </div>
+        </div>
+      </div>
      <div id='content2'>
-
+      
      </div>
      <div id='content3'>
+        <div className='rectangle-1'>
 
+        </div>
+        <div className='circle-1'>
+          
+        </div>
+        <div className='rectangle-1'>
+          
+        </div>
      </div>
      <footer>
-
+          <div className='left-1'>
+          
+          </div>
+          <div className='right-1'>
+          
+        </div>
      </footer>
     </div>
     
