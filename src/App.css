@@ -134,7 +134,7 @@ main{
 .circle-1
 {
   background-color: blue;
-  width: 11%;
+  width: 100px;
   border-radius: 50%;
   border: var(--main-border);
 }
